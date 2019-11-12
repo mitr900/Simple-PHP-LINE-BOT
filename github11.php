@@ -1,4 +1,4 @@
 <?
 
- echo "Hello git hub by mitr";
+ echo "Hello กาย ทดสอบ";
 ?>
