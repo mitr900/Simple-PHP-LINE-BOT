@@ -34,7 +34,6 @@ if($arrJson['events'][0]['message']['text'] == "hi"){
   $arrPostData['messages'][0]['text'] = "สวัสดีครับ ID ของคุณคือ ".$arrJson['events'][0]['source']['userId']. "กรุณาคัดลอกข้อความนี้ ส่งมาที่ ไลน์ ส่วนตัวของ มิตร นะครับเพื่อลงทะเบียน";
 }
  
- 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$strUrl);
 curl_setopt($ch, CURLOPT_HEADER, false);
@@ -45,5 +44,4 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $result = curl_exec($ch);
 curl_close ($ch);
- 
 ?>
